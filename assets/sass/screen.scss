@@ -1,0 +1,137 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$black: #000000;
+ 
+h1 {
+	font-family: "hwt-artz", "Helvetica Neue", sans-serif !important;   
+}
+
+h1.title {
+	font-size: 5em;
+	font-size: 80px
+}
+
+h2, h3, h4, h5 {
+font-family: "sneakers-pro", sans-serif !important;
+}
+
+em {
+font-style: italic;
+}
+
+p,li {
+font-family: "Helvetica", "Helvetica Neue", sans-serif; 
+font-size: 1.25em; 
+line-height: 1em;
+font-weight: light;
+font-weight: 300;
+} 
+
+footer p {font-family: "Helvetica", "Helvetica Neue", sans-serif; }
+
+.body { margin-top: 40px; }
+
+div.meaty-main-menu {
+	padding-left: 0;
+	margin-top: 0px;
+
+}
+
+h2.tagline {
+	padding-left: 20px; 
+	padding-bottom:20px;
+	border-bottom: black solid; 
+}
+
+ul.main-menu {
+	margin: 0;
+	li {
+		float: left;
+		padding: 0px 20px 20px 20px;			a {
+				color: $black;
+				font-family: "sneakers-pro", sans-serif !important;
+			}
+	}
+
+}
+
+header.container {
+	position: relative;
+
+	div#steak {
+		a {
+		display: block;
+		
+		img.steak {
+		width: 250px;	
+		}
+		
+		}
+	}
+	
+	div.about-meaty, div.team-meaty, div.services-meaty, div.contact-meaty, div#back-to-top.back {
+		/* display:none; */
+		a {
+		color: $black;
+		}
+	}
+	
+	div.back {
+		position: absolute;
+		bottom: 40px;
+		left: 0px;
+	}
+
+
+}
+
+div.mobile-meaty {
+	display:none;
+}
+
+
+/*Media Breakpoints*/
+@media (max-width: 767px) {
+
+h1.title {
+        font-size: 5em;
+	line-height: .9em;
+        font-size: 80px;
+        text-align: center;
+        color: $black;
+}
+
+	div.mobile-meaty {
+		display:block;
+		h1#activate-mobile {
+			cursor: pointer;
+		}
+	}
+	ul.main-menu {
+	display:none;
+	margin: 0;
+	li {
+		float: none;
+		padding: 0px 20px 20px 20px;			
+		a {
+				color: $black;
+				font-family: "sneakers-pro", sans-serif !important;
+			}
+	}
+
+}
+
+}
+
+@media (min-width: 1200px) {
+
+div.content {
+	padding-left:80px;
+}
+
+}

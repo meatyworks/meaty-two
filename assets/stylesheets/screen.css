@@ -1,0 +1,211 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../sass/screen.scss */
+h1 {
+  font-family: "hwt-artz", "Helvetica Neue", sans-serif !important;
+}
+
+/* line 14, ../sass/screen.scss */
+h1.title {
+  font-size: 5em;
+  font-size: 80px;
+}
+
+/* line 19, ../sass/screen.scss */
+h2, h3, h4, h5 {
+  font-family: "sneakers-pro", sans-serif !important;
+}
+
+/* line 23, ../sass/screen.scss */
+em {
+  font-style: italic;
+}
+
+/* line 27, ../sass/screen.scss */
+p, li {
+  font-family: "Helvetica", "Helvetica Neue", sans-serif;
+  font-size: 1.25em;
+  line-height: 1em;
+  font-weight: light;
+  font-weight: 300;
+}
+
+/* line 35, ../sass/screen.scss */
+footer p {
+  font-family: "Helvetica", "Helvetica Neue", sans-serif;
+}
+
+/* line 37, ../sass/screen.scss */
+.body {
+  margin-top: 40px;
+}
+
+/* line 39, ../sass/screen.scss */
+div.meaty-main-menu {
+  padding-left: 0;
+  margin-top: 0px;
+}
+
+/* line 45, ../sass/screen.scss */
+h2.tagline {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  border-bottom: black solid;
+}
+
+/* line 51, ../sass/screen.scss */
+ul.main-menu {
+  margin: 0;
+}
+/* line 53, ../sass/screen.scss */
+ul.main-menu li {
+  float: left;
+  padding: 0px 20px 20px 20px;
+}
+/* line 55, ../sass/screen.scss */
+ul.main-menu li a {
+  color: black;
+  font-family: "sneakers-pro", sans-serif !important;
+}
+
+/* line 63, ../sass/screen.scss */
+header.container {
+  position: relative;
+}
+/* line 67, ../sass/screen.scss */
+header.container div#steak a {
+  display: block;
+}
+/* line 70, ../sass/screen.scss */
+header.container div#steak a img.steak {
+  width: 250px;
+}
+/* line 77, ../sass/screen.scss */
+header.container div.about-meaty, header.container div.team-meaty, header.container div.services-meaty, header.container div.contact-meaty, header.container div#back-to-top.back {
+  /* display:none; */
+}
+/* line 79, ../sass/screen.scss */
+header.container div.about-meaty a, header.container div.team-meaty a, header.container div.services-meaty a, header.container div.contact-meaty a, header.container div#back-to-top.back a {
+  color: black;
+}
+/* line 84, ../sass/screen.scss */
+header.container div.back {
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+}
+
+/* line 93, ../sass/screen.scss */
+div.mobile-meaty {
+  display: none;
+}
+
+/*Media Breakpoints*/
+@media (max-width: 767px) {
+  /* line 101, ../sass/screen.scss */
+  h1.title {
+    font-size: 5em;
+    line-height: .9em;
+    font-size: 80px;
+    text-align: center;
+    color: black;
+  }
+
+  /* line 109, ../sass/screen.scss */
+  div.mobile-meaty {
+    display: block;
+  }
+  /* line 111, ../sass/screen.scss */
+  div.mobile-meaty h1#activate-mobile {
+    cursor: pointer;
+  }
+
+  /* line 115, ../sass/screen.scss */
+  ul.main-menu {
+    display: none;
+    margin: 0;
+  }
+  /* line 118, ../sass/screen.scss */
+  ul.main-menu li {
+    float: none;
+    padding: 0px 20px 20px 20px;
+  }
+  /* line 121, ../sass/screen.scss */
+  ul.main-menu li a {
+    color: black;
+    font-family: "sneakers-pro", sans-serif !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 133, ../sass/screen.scss */
+  div.content {
+    padding-left: 80px;
+  }
+}
