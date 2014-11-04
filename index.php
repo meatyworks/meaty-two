@@ -7,6 +7,7 @@ get_header(); ?>
 
   <div class="container">  
   			
+<!--
 <?php $home = new WP_Query('tag=about&order=ASC&posts_per_page=1'); ?>
 <?php while ($home->have_posts()) : $home->the_post(); ?> 	
 			
@@ -18,6 +19,8 @@ get_header(); ?>
  	</div> 
 
 <?php endwhile; ?>    		
+-->
+
   </div>
   	
   	<hr/>

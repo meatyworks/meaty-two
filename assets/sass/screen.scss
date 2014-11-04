@@ -6,6 +6,7 @@
 @import "compass/reset";
 
 $black: #000000;
+$white: #FFFFFF;
  
 h1 {
 	font-family: "hwt-artz", "Helvetica Neue", sans-serif !important;   
@@ -34,8 +35,6 @@ font-weight: 300;
 
 footer p {font-family: "Helvetica", "Helvetica Neue", sans-serif; }
 
-.body { margin-top: 40px; }
-
 div.meaty-main-menu {
 	padding-left: 0;
 	margin-top: 0px;
@@ -52,12 +51,29 @@ ul.main-menu {
 	margin: 0;
 	li {
 		float: left;
-		padding: 0px 20px 20px 20px;			a {
+		padding: 0px 20px 20px 20px;			
+		a {
 				color: $black;
 				font-family: "sneakers-pro", sans-serif !important;
+				transition: 1s;
 			}
+		a:hover {
+				color: $white;
+				background-color: $black;
+				padding: 10px;
+				text-decoration: none;
+			}	
+		
 	}
 
+}
+
+div.container {
+	
+	a {
+	color: $black;
+	}
+	
 }
 
 header.container {
@@ -94,8 +110,27 @@ div.mobile-meaty {
 	display:none;
 }
 
+img {
+	width: 100%;
+	height: auto;
+}
 
-/*Media Breakpoints*/
+img.attachment-team-thumb {
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+filter: url(#greyscale);
+filter: gray;
+transition: 1s;
+}
+
+img.attachment-team-thumb:hover {
+-webkit-filter: grayscale(0);
+filter: grayscale(0);
+filter: none;
+}
+
+
+/**********************************Media Breakpoints*/
 @media (max-width: 767px) {
 
 h1.title {
@@ -104,6 +139,13 @@ h1.title {
         font-size: 80px;
         text-align: center;
         color: $black;
+}
+
+h2.tagline {
+	padding-left: 20px; 
+	padding-bottom:20px;
+	border-bottom: black solid;
+	font-size: 18px; 
 }
 
 	div.mobile-meaty {
@@ -124,6 +166,15 @@ h1.title {
 			}
 	}
 
+}
+
+div.team-imgs {
+	padding: 0; 
+}
+
+a {
+	display: block;
+	max-height: 300px;
 }
 
 }

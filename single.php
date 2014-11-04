@@ -10,6 +10,12 @@ get_header(); ?>
 	<?php if ( have_posts()) : while ( have_posts()) : the_post(); ?>
 			
   	<div class="col-md-12" >
+  	<?php if(has_tag('team')) { ?>
+
+  	<?php if ( has_post_thumbnail()) { the_post_thumbnail('team-thumb'); } ?>
+	
+  	<?php } ?>
+  	
  	 	<h1>
  	 	<?php the_title(); ?>
  	 	</h1>

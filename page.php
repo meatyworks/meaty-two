@@ -6,21 +6,30 @@
 get_header(); ?>
 
   <div class="container">  
-	<?php if ( have_posts()) : while ( have_posts()) : the_post(); ?>
-			
-  	<div class="col-md-12" >
- 	 	<div class="col-md-4">
+
+	<div class="col-md-12" >
  	 	<h1>
  	 	<?php the_title(); ?>
  	 	</h1>
- 	 	</div>
- 	 	<div class="col-md-8 body">
  	 	<?php the_content(); ?>
-		</div> 	 	
  	</div> 
-  			 <?php endwhile; ?>
-  </div>
-  	<?php endif; ?>
+
+<!--
+<?php $home = new WP_Query('tag=about&order=ASC&posts_per_page=1'); ?>
+<?php while ($home->have_posts()) : $home->the_post(); ?> 	
+			
+  	<div class="col-md-12" >
+ 	 	<h1>
+ 	 	<?php the_title(); ?>
+ 	 	</h1>
+ 	 	<?php the_content(); ?>
+ 	</div> 
+
+<?php endwhile; ?>    	
+-->	  
+
+	</div>
+
   	<hr/>
 
 <?php get_footer(); ?>

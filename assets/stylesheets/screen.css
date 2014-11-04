@@ -67,28 +67,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 10, ../sass/screen.scss */
+/* line 11, ../sass/screen.scss */
 h1 {
   font-family: "hwt-artz", "Helvetica Neue", sans-serif !important;
 }
 
-/* line 14, ../sass/screen.scss */
+/* line 15, ../sass/screen.scss */
 h1.title {
   font-size: 5em;
   font-size: 80px;
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 h2, h3, h4, h5 {
   font-family: "sneakers-pro", sans-serif !important;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 em {
   font-style: italic;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 p, li {
   font-family: "Helvetica", "Helvetica Neue", sans-serif;
   font-size: 1.25em;
@@ -97,34 +97,29 @@ p, li {
   font-weight: 300;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 footer p {
   font-family: "Helvetica", "Helvetica Neue", sans-serif;
 }
 
-/* line 37, ../sass/screen.scss */
-.body {
-  margin-top: 40px;
-}
-
-/* line 39, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 div.meaty-main-menu {
   padding-left: 0;
   margin-top: 0px;
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 h2.tagline {
   padding-left: 20px;
   padding-bottom: 20px;
   border-bottom: black solid;
 }
 
-/* line 51, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 ul.main-menu {
   margin: 0;
 }
-/* line 53, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 ul.main-menu li {
   float: left;
   padding: 0px 20px 20px 20px;
@@ -133,43 +128,78 @@ ul.main-menu li {
 ul.main-menu li a {
   color: black;
   font-family: "sneakers-pro", sans-serif !important;
+  transition: 1s;
+}
+/* line 60, ../sass/screen.scss */
+ul.main-menu li a:hover {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  text-decoration: none;
 }
 
-/* line 63, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
+div.container a {
+  color: black;
+}
+
+/* line 79, ../sass/screen.scss */
 header.container {
   position: relative;
 }
-/* line 67, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 header.container div#steak a {
   display: block;
 }
-/* line 70, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 header.container div#steak a img.steak {
   width: 250px;
 }
-/* line 77, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 header.container div.about-meaty, header.container div.team-meaty, header.container div.services-meaty, header.container div.contact-meaty, header.container div#back-to-top.back {
   /* display:none; */
 }
-/* line 79, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 header.container div.about-meaty a, header.container div.team-meaty a, header.container div.services-meaty a, header.container div.contact-meaty a, header.container div#back-to-top.back a {
   color: black;
 }
-/* line 84, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 header.container div.back {
   position: absolute;
   bottom: 40px;
   left: 0px;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 div.mobile-meaty {
   display: none;
 }
 
-/*Media Breakpoints*/
+/* line 113, ../sass/screen.scss */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 118, ../sass/screen.scss */
+img.attachment-team-thumb {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: url(#greyscale);
+  filter: gray;
+  transition: 1s;
+}
+
+/* line 126, ../sass/screen.scss */
+img.attachment-team-thumb:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  filter: none;
+}
+
+/**********************************Media Breakpoints*/
 @media (max-width: 767px) {
-  /* line 101, ../sass/screen.scss */
+  /* line 136, ../sass/screen.scss */
   h1.title {
     font-size: 5em;
     line-height: .9em;
@@ -178,33 +208,52 @@ div.mobile-meaty {
     color: black;
   }
 
-  /* line 109, ../sass/screen.scss */
+  /* line 144, ../sass/screen.scss */
+  h2.tagline {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-bottom: black solid;
+    font-size: 18px;
+  }
+
+  /* line 151, ../sass/screen.scss */
   div.mobile-meaty {
     display: block;
   }
-  /* line 111, ../sass/screen.scss */
+  /* line 153, ../sass/screen.scss */
   div.mobile-meaty h1#activate-mobile {
     cursor: pointer;
   }
 
-  /* line 115, ../sass/screen.scss */
+  /* line 157, ../sass/screen.scss */
   ul.main-menu {
     display: none;
     margin: 0;
   }
-  /* line 118, ../sass/screen.scss */
+  /* line 160, ../sass/screen.scss */
   ul.main-menu li {
     float: none;
     padding: 0px 20px 20px 20px;
   }
-  /* line 121, ../sass/screen.scss */
+  /* line 163, ../sass/screen.scss */
   ul.main-menu li a {
     color: black;
     font-family: "sneakers-pro", sans-serif !important;
   }
+
+  /* line 171, ../sass/screen.scss */
+  div.team-imgs {
+    padding: 0;
+  }
+
+  /* line 175, ../sass/screen.scss */
+  a {
+    display: block;
+    max-height: 300px;
+  }
 }
 @media (min-width: 1200px) {
-  /* line 133, ../sass/screen.scss */
+  /* line 184, ../sass/screen.scss */
   div.content {
     padding-left: 80px;
   }

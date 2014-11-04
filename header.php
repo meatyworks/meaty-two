@@ -29,14 +29,14 @@
 
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(''); ?>>
 
 <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <header class="container">
-	
+<?php if(!is_home()) { ?>
 <div class="col-md-12" id="steak">
 	<a href="<?php bloginfo('home'); ?>"><img class="steak" src="<?php echo get_template_directory_uri(); ?>/img/meatyfinal.svg" alt="Meaty Works Digital Studio"></a>
  </div> 
@@ -77,9 +77,13 @@ $defaults = array(
 
 wp_nav_menu( $defaults );
 
-?>
-	
+?>	
 	</div>
+<?php } else { ?>
+
+<a href="/about/"><img class="steak animated fadeInDown" src="<?php echo get_template_directory_uri(); ?>/img/meatyfinal.svg" alt="Meaty Works Digital Studio"></a>
+
+<?php } ?>
 
 </header>
 
