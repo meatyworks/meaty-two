@@ -38,7 +38,7 @@
 <header class="container">
 <?php if(!is_home()) { ?>
 <div class="col-md-12" id="steak">
-	<a href="<?php bloginfo('home'); ?>"><img class="steak" src="<?php echo get_template_directory_uri(); ?>/img/meatyfinal.svg" alt="Meaty Works Digital Studio"></a>
+	<a href="<?php bloginfo('home'); ?>"><img class="steak" src="<?php echo get_template_directory_uri(); ?>/img/meatyfinal.svg" onerror=/"this.src=<?php echo get_template_directory_uri(); ?>/img/meatyfinal.jpg" alt="Meaty Works Digital Studio"></a>
  </div> 
 
 
@@ -81,7 +81,7 @@ wp_nav_menu( $defaults );
 	</div>
 <?php } else { ?>
 
-<a href="/about/"><img class="steak animated fadeInDown" src="<?php echo get_template_directory_uri(); ?>/img/meatyfinal.svg" alt="Meaty Works Digital Studio"></a>
+<a href="/about/"><img class="steak animated fadeIn" src="<?php echo get_template_directory_uri(); ?>/img/meatyfinal.svg" onerror=/"this.src=<?php echo get_template_directory_uri(); ?>/img/meatyfinal.jpg" alt="Meaty Works Digital Studio" alt="Meaty Works Digital Studio"></a>
 
 <?php } ?>
 

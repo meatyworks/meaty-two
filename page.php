@@ -1,12 +1,12 @@
 <?php
 /*
- * Template Name: Page.
+ * Template Name: Page
 */
 
 get_header(); ?>
 
   <div class="container">  
-
+<?php if ( have_posts()) : while ( have_posts()) : the_post(); ?>
 	<div class="col-md-12" >
  	 	<h1>
  	 	<?php the_title(); ?>
@@ -28,7 +28,10 @@ get_header(); ?>
 <?php endwhile; ?>    	
 -->	  
 
-	</div>
+  <?php endwhile; ?>
+  		
+  </div>
+  	<?php endif; ?>
 
   	<hr/>
 

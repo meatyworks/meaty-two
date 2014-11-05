@@ -4,19 +4,15 @@
  *
  */
 ?>
-	<!--<footer class="container" id="colophon" role="contentinfo" >
+	<footer class="container" id="colophon" role="contentinfo" >
 		
-		<div class="col-md-12">
-			<div class="col-md-6">
 			<p style="font-size: x-small">
-			Meaty Theme v.1 &copy; <?php echo date('Y'); ?> Meaty Works 
+			&copy; <?php echo date('Y'); ?> Meaty Works <a href="/contact/">Get in touch!</a>
 			</p>
-			</div>
-		</div>
 
 		
-	</footer>-->
-
+	</footer>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/vendor/bootstrap.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/main.js"></script>
 <script src="//use.typekit.net/hzl2phe.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>

@@ -175,31 +175,39 @@ div.mobile-meaty {
   display: none;
 }
 
-/* line 113, ../sass/screen.scss */
+/*
 img {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
 }
-
-/* line 118, ../sass/screen.scss */
-img.attachment-team-thumb {
+*/
+/* line 120, ../sass/screen.scss */
+img.attachment-team-thumb, img.size-full {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  /* Firefox 10+, Firefox on Android */
   -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
   filter: grayscale(100%);
-  filter: url(#greyscale);
   filter: gray;
-  transition: 1s;
+  /* IE 6-9 */
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
-/* line 126, ../sass/screen.scss */
-img.attachment-team-thumb:hover {
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
+/* line 133, ../sass/screen.scss */
+img.attachment-team-thumb:hover, img.size-full:hover {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
   filter: none;
 }
 
 /**********************************Media Breakpoints*/
 @media (max-width: 767px) {
-  /* line 136, ../sass/screen.scss */
+  /* line 144, ../sass/screen.scss */
   h1.title {
     font-size: 5em;
     line-height: .9em;
@@ -208,7 +216,7 @@ img.attachment-team-thumb:hover {
     color: black;
   }
 
-  /* line 144, ../sass/screen.scss */
+  /* line 152, ../sass/screen.scss */
   h2.tagline {
     padding-left: 20px;
     padding-bottom: 20px;
@@ -216,44 +224,50 @@ img.attachment-team-thumb:hover {
     font-size: 18px;
   }
 
-  /* line 151, ../sass/screen.scss */
+  /* line 159, ../sass/screen.scss */
   div.mobile-meaty {
     display: block;
   }
-  /* line 153, ../sass/screen.scss */
+  /* line 161, ../sass/screen.scss */
   div.mobile-meaty h1#activate-mobile {
     cursor: pointer;
   }
 
-  /* line 157, ../sass/screen.scss */
+  /* line 165, ../sass/screen.scss */
   ul.main-menu {
     display: none;
     margin: 0;
   }
-  /* line 160, ../sass/screen.scss */
+  /* line 168, ../sass/screen.scss */
   ul.main-menu li {
     float: none;
     padding: 0px 20px 20px 20px;
   }
-  /* line 163, ../sass/screen.scss */
+  /* line 171, ../sass/screen.scss */
   ul.main-menu li a {
     color: black;
     font-family: "sneakers-pro", sans-serif !important;
   }
 
-  /* line 171, ../sass/screen.scss */
+  /* line 179, ../sass/screen.scss */
   div.team-imgs {
     padding: 0;
   }
 
-  /* line 175, ../sass/screen.scss */
+  /* line 183, ../sass/screen.scss */
   a {
     display: block;
     max-height: 300px;
   }
+
+  /* line 189, ../sass/screen.scss */
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 @media (min-width: 1200px) {
-  /* line 184, ../sass/screen.scss */
+  /* line 198, ../sass/screen.scss */
   div.content {
     padding-left: 80px;
   }
