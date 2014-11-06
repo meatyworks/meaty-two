@@ -14,7 +14,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>MEATY WORKS</title> <!--EK EDIT-->
-        <meta name="description" content="">
+        <meta name="description" content="<?php bloginfo('description'); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="google-site-verification" content="FA68Cdvtx09MyAyQsB62fAXnr7ruNHNfkIn83u-vz-w" />
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -37,8 +37,8 @@
 
 <header class="container">
 <?php if(!is_home()) { ?>
-<div class="col-md-12" id="steak">
-	<a href="<?php bloginfo('home'); ?>"><img class="steak" src="<?php echo get_template_directory_uri(); ?>/img/meatyfinal.svg" onerror=/"this.src=<?php echo get_template_directory_uri(); ?>/img/meatyfinal.jpg" alt="Meaty Works Digital Studio"></a>
+<div class="col-md-12 home-steak" id="steak">
+	<a href="<?php bloginfo('home'); ?>"><img class="steak" src="<?php echo get_template_directory_uri(); ?>/img/meatyfinal.svg" alt="Meaty Works Digital Studio"></a>
  </div> 
 
 
@@ -81,8 +81,9 @@ wp_nav_menu( $defaults );
 	</div>
 <?php } else { ?>
 
-<a href="/about/"><img class="steak animated fadeIn" src="<?php echo get_template_directory_uri(); ?>/img/meatyfinal.svg" onerror=/"this.src=<?php echo get_template_directory_uri(); ?>/img/meatyfinal.jpg" alt="Meaty Works Digital Studio" alt="Meaty Works Digital Studio"></a>
-
+<div class="home-steak col-md-12">
+<a href="/about/"><img class="steak animated fadeIn" src="<?php echo get_template_directory_uri(); ?>/img/meatyfinal.svg" alt="Meaty Works Digital Studio"></a>
+</div>
 <?php } ?>
 
 </header>
